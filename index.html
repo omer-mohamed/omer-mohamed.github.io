@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,8 +63,20 @@
 						<div id="preview">
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
+							
 							<h3>Who am I</h3>
-							<p>I was a lead developer in a past life, now I am a frog :).</p>
+							<span class="type"></span>
+							<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+							<script >
+								var typed = new Typed('.type', {
+								strings: ['I code', 'I build projects' ,'I play soccer','I take pictures', 'I study CS','I love me some Osmows'],
+								typeSpeed: 100,
+								cursorChar: '_',
+								loop: true,
+								showCursor: true,
+								smartBackspace: true 
+								});
+							</script>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -86,7 +99,7 @@
 
 					<p>I'm in my third year of the Computer Science Honours Bachelor's Degree at Carleton University in Ottawa, Ontario.</p>
 
-					<p>While I am busy studying, I also love to contribute to open source projects and build new projects just to tickle my brain</p>
+					<p>While I am busy studying, I also love to contribute to the open source world and build new projects just to tickle my brain</p>
 
 
 					<hr>
@@ -171,6 +184,8 @@
 			</div>
 		</div>
 	</section>
+
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
+
