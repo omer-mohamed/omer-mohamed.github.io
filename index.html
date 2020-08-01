@@ -64,12 +64,21 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							
-							<h3>Who am I</h3>
+							<h3 id ="time" style="font-size: 18px"></h3>
+							<script>
+								var d = new Date(),
+									minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+									hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+									ampm = d.getHours() >= 12 ? 'pm' : 'am',
+									months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+									days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+									document.getElementById('time').innerHTML="As of "+ days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+', '+hours+':'+minutes+ampm;
+							</script>
 							<span class="type"></span>
 							<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 							<script >
 								var typed = new Typed('.type', {
-								strings: ['I code', 'I build projects' ,'I play soccer','I take pictures', 'I study CS','I love me some Osmows'],
+								strings: ['I am probably programming', 'I am probably playing soccer','I am probably taking photographs', 'I am probably procrastinating','I am probably cooking a mean steak','I am probably waiting for a bus','I am looking for the one ring to rule them all!'],
 								typeSpeed: 100,
 								cursorChar: '_',
 								loop: true,
@@ -82,9 +91,7 @@
 						</div>
 					</div>
 				</div>
-				
 			</div>
-			
 		</div>
 		
 	</section>
@@ -175,8 +182,7 @@
 						<img class="thumbnail" src="images/membership site.jpg">
 						<div class="post-preview">
 							<h6 class="post-title">Membership Website</h6>
-							<p class="post-intro">Modulized guide for online courses with step by  step intructions</p>
-							
+							<p class="post-intro">Modulized guide for online courses with step by  step intructions</p>	
 						</div>
 					</div>
 				</div>
