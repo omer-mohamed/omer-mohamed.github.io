@@ -364,7 +364,14 @@ main-section {
 	font-size: 14px;
 }
 
-
+.post img{
+	width:260px;
+	height:260px;  
+	display: block;			
+	margin-left: auto;			
+	margin-right: auto;
+						
+}
 #contact-form{
 	display: block;
 	max-width: 600px;
