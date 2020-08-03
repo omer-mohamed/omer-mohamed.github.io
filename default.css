@@ -338,7 +338,10 @@ main-section {
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
-
+.post a{
+    position:relative;
+    z-index:9999;
+}
 .thumbnail{
 	display: block;
 	width: 100%;
